@@ -36,7 +36,7 @@ header{
 }
 
 header .name{
-    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-size: clamp(1rem, 2.5vw, 3rem);
     font-weight: bold;
     white-space: nowrap;
 }
@@ -78,11 +78,11 @@ section.home {
 .intro{
     display: flex;
     flex-direction: column;
-    max-width: 550px;
+    max-width: 40vw;
 }
 
 .intro-name{
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1rem, 5vw, 3.5rem);
     background: #ff6a00;
     background: -webkit-linear-gradient(
         to right,
@@ -111,7 +111,7 @@ section.home {
     position: relative;
     opacity: 0;
     width: 100%;
-    font-size: 30px;
+    font-size: clamp(1rem, 2.5vw, 2rem);;
     animation-delay: 3s;
     animation-name: sliding-right;
     animation-duration: 3s;
@@ -150,11 +150,19 @@ section.home {
     box-shadow: 0 0 10px #ff6a00;
 }
 
+.dropdown {
+    display: none;
+}
+
 @media (max-width: 1000px) {
-    nav{
-        flex-direction: column;
-        gap: 2rem;
+    .nav-links{
+        display: none;
     }
+
+    .dropdown {
+        display: block;
+    }
+
     h2 {
         font-size: 40px;
     }
@@ -214,7 +222,7 @@ section.home {
 .photo{
     position: relative;
     flex-shrink: 0;
-    width: 20vw;
+    width: 25vw;
     height: auto;
     opacity: 0;
     animation: opening 3s ease-in-out forwards;
