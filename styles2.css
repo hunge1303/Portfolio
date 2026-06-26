@@ -483,6 +483,11 @@ section.home {
 
     .dropdown {
         display: block;
+        flex-shrink: 0;
+    }
+
+    .dropdown-menu {
+        position: fixed;
     }
 
     section.home {

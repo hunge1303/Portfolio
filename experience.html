@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -20,52 +19,63 @@
                 <a href="experience.html">Experiences</a>
             </nav>
             <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Menu
-                </a>
-
-                <ul class="dropdown-menu">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="about.html">About Me</a></li>
                     <li><a class="dropdown-item" href="education.html">Education</a></li>
                     <li><a class="dropdown-item" href="experience.html">Experience</a></li>
                 </ul>
             </div>
         </header>
+
         <div class="experience">
             <div class="exp-heading">
                 <h1 class="h1 border-bottom">Experience</h1>
             </div>
-            <div class="d-flex justify-content-between gap-2">
-                <div class="card">
-                    <img src="images/code.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Junior in Coding</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <!--
+                FIX: replaced d-flex justify-content-between with a Bootstrap
+                row/col grid so cards stack to 2-per-row on tablet and
+                1-per-row on mobile, instead of staying in a single cramped row.
+            -->
+            <div class="row g-3 w-100 mt-2">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="images/code.png" class="card-img-top" alt="Coding">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior in Coding</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/electronic.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Junior in Electronics</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="images/electronic.png" class="card-img-top" alt="Electronics">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior in Electronics</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/organize.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Organizing Events</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="images/organize.png" class="card-img-top" alt="Organizing">
+                        <div class="card-body">
+                            <h5 class="card-title">Organizing Events</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/teamwork.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Teamwork</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="images/teamwork.jpg" class="card-img-top" alt="Teamwork">
+                        <div class="card-body">
+                            <h5 class="card-title">Teamwork</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
-
