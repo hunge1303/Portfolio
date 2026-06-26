@@ -26,7 +26,7 @@ header{
     left: 0;
     right: 0;
     z-index: 100;
-    height: 9%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,65 +154,6 @@ section.home {
     display: none;
 }
 
-@media (max-width: 1000px) {
-    .nav-links{
-        display: none;
-    }
-
-    .dropdown {
-        display: block;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    .paragraph-large {
-        font-size: 18px;
-    }
-
-    .padding-vertical-xlarge {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .timeline-item {
-        grid-template-columns: 64px 1fr;
-        width: 100%;
-    }
-
-    .timeline-left {
-        text-align: left;
-        grid-area: 1 / 2 / 2 / 3;
-    }
-
-    .timeline-centre {
-        justify-content: flex-start;
-        grid-area: 1 / 1 / 3 / 2;
-    }
-
-    .timeline-right {
-        grid-area: span 1 / span 1 / span 1 / span 1;
-    }
-
-    .timeline-date-text {
-        margin-bottom: 24px;
-        font-size: 36px;
-    }
-
-    .timeline-text {
-        font-size: 20px;
-    }
-
-    .timeline-progress {
-        left: 6px;
-    }
-
-    .margin-bottom-xlarge {
-        margin-bottom: 48px;
-    }
-}
-
 @property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
@@ -290,6 +231,7 @@ section.home {
 .about{
     min-height: calc(100vh - 60px);
     margin-top: 60px;
+    padding-top: 40px;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 5%;
@@ -532,4 +474,96 @@ section.home {
 .experience img {
     max-width: 100%;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-links{
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    section.home {
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 90px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photo {
+        width: 65vw;
+        max-width: 280px;
+    }
+
+    .intro {
+        max-width: 90vw;
+        align-items: center;
+    }
+
+    .about {
+        padding-top: 20px;
+    }
+
+    .paragraph-large {
+        font-size: 18px;
+    }
+
+    .padding-vertical-xlarge {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 64px 1fr;
+        width: 100%;
+    }
+
+    .timeline-left {
+        text-align: left;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .timeline-centre {
+        justify-content: flex-start;
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .timeline-right {
+        grid-area: span 1 / span 1 / span 1 / span 1;
+    }
+
+    .timeline-date-text {
+        margin-bottom: 24px;
+        font-size: 36px;
+    }
+
+    .timeline-text {
+        font-size: 20px;
+    }
+
+    .timeline-progress {
+        left: 6px;
+    }
+
+    .margin-bottom-xlarge {
+        margin-bottom: 48px;
+    }
+
+    .experience {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .experience .d-flex {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .experience .card {
+        width: 100%;
+    }
 }
