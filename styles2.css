@@ -517,8 +517,9 @@ section.home {
     }
 
     .timeline-item {
-        grid-template-columns: 64px 1fr;
+        grid-template-columns: 48px 1fr;
         width: 100%;
+        padding-top: 48px;
     }
 
     .timeline-left {
@@ -533,6 +534,11 @@ section.home {
 
     .timeline-right {
         grid-area: span 1 / span 1 / span 1 / span 1;
+        transform: translateX(30px);
+    }
+
+    .timeline-date {
+        font-size: 22px;
     }
 
     .timeline-date-text {
@@ -541,7 +547,7 @@ section.home {
     }
 
     .timeline-text {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .timeline-progress {
