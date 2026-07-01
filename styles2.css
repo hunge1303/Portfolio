@@ -544,6 +544,7 @@ section.home {
         width: 100%;
         min-width: 0;
         transform: translateX(15px);
+        transition: all 1s;
     }
 
     .timeline-date {
