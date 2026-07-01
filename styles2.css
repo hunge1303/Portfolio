@@ -561,6 +561,11 @@ section.home {
         word-break: break-word;
     }
 
+    .timeline-right.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
     .timeline-progress {
         left: 6px;
     }
